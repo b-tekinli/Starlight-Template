@@ -7,52 +7,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-mono">
     <!-- HEADER -->
     <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
-                <img src="img/x.svg">
-                <span class="ml-3 text-xl">Starlight</span>
+        <div class="container md:mx-16 flex md:p-5 sm:px-2 sm:flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-black md:mb-4 md:mb-0">
+                <img class="ml-3" src="img/x.svg">
+                <span class="ml-3 md:text-xl">Starlight</span>
             </a>
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center invisible sm:visible">
+            <nav
+                class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center invisible sm:visible">
                 <a class="mr-5 text-xs text-black">Explore Starlight</a>
                 <a class="mr-5 text-xs text-black">Cryptoloria</a>
                 <a class="mr-5 text-xs text-black">SLX Token</a>
             </nav>
-            <button
-                class="inline-flex items-center text-sm border border-purple-500 py-2 px-3 mr-3 rounded-full text-base invisible sm:visible mt-4 md:mt-0">
-                Sign in
-            </button>
-            <button
-                class="inline-flex items-center text-sm font-bold border border-slate-300 p-3 rounded-full text-base mt-4 md:mt-0">
-                <img src="img/night.svg">
-            </button>
-            <button
-                class="inline-flex items-center text-sm font-bold border border-slate-300 p-3 rounded-full text-base visible md:invisible mt-4 md:mt-0">
-                <img src="img/night.svg">
-            </button>
-            <button
-                class="inline-flex items-center text-sm font-bold border border-slate-300 p-3 rounded-full text-base visible md:invisible mt-4 md:mt-0">
-                <img src="img/night.svg">
-            </button>
+            <div class="buttons flex mt-4">
+                <button
+                    class="inline-flex items-center text-sm border border-purple-500 md:px-4 md:mr-3 rounded-full text-base invisible sm:visible md:mt-4 md:mt-0 md:mr-20">
+                    Sign in
+                </button>
+                <button
+                    class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base md:mt-4 md:mt-0 mr-2 -ml-14">
+                    <img src="img/night.svg">
+                </button>
+                <button
+                    class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base visible md:invisible md:mt-4 md:mt-0 mr-2">
+                    <img src="img/shape.svg">
+                </button>
+                <button
+                    class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base visible md:invisible md:mt-4 md:mt-0 mr-2">
+                    <img src="img/user.svg">
+                </button>
+            </div>
         </div>
     </header>
 
 
     <!-- MAIN -->
     <main>
-        <img class="md:absolute md:mt-52 w-full invisible sm:visible" src="img/main.png">
-        <div class="mx-auto flex flex-col px-5 md:py-24 pb-60 justify-center items-center"
+        <img class="md:absolute sm:relative md:mt-52 w-full invisible sm:visible" src="img/main.png">
+        <div class="mx-auto flex flex-col px-5 md:py-20 md:mb-60 md:pb-60 justify-center items-center"
             style="background-image: url('img/main-gradient.png');">
-            <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
-                <img src="img/cryptoria.png">
+            <div class="w-full md:w-2/3 flex flex-col items-center text-center">
+                <img class="relative -top-60 md:-top-2" src="img/cryptoria.png">
                 <img src="img/main-x.png">
                 <div class="logo flex mt-3 mb-5">
                     <img src="img/x.svg">
                     <span class="ml-3 text-xl">Starlight</span>
                 </div>
-                <p class="mb-8 md:w-2/4 text-xs leading-relaxed">
+                <p class="mb-8 md:w-2/4 w-2/4 text-xs leading-relaxed">
                     The enchanted universe of Cryptoloria in partnership with Starlight.
                     Exclusive NFT collection drops.
                 </p>
@@ -61,7 +64,7 @@
                         <p>Next drop in:</p>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="flex sm:w-1/2">
                     <div class="parag">
                         <b>4</b>
                         <p class="pl-4 text-sm">Days</p>
@@ -85,6 +88,34 @@
             </div>
         </div>
     </main>
+
+
+    <!-- SECTION 1 -->
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto mt-24">
+            <div class="text flex justify-between mb-4">
+                <p class="ml-28 text-3xl font-semibold tracking-wider">Featured Collection Name
+                </p>
+                <button
+                    class="inline-flex text-sm border border-purple-500 md:px-5 md:py-3 md:mr-3 rounded-full text-base invisible sm:visible md:mt-4 md:mt-0 md:mr-20">
+                    View all
+                </button>
+            </div>
+            <div class="lg:w-4/5 mx-auto flex flex-wrap font-mono">
+                <div class="img">
+                    <img class="lg:h-80 h-64 object-cover object-center rounded absolute" src="img/moon.png">
+                    <div class="box mx-5 p-2 mt-60 rounded bg-gray-300 relative w-full mr-32">
+                        <p class="title text-lg">
+                            Moon Landing
+                        </p>
+                        <p class="body text-gray-400 text-xs">
+                            Original Series
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
