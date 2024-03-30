@@ -15,72 +15,68 @@
                 <img class="ml-3" src="img/x.svg">
                 <span class="ml-3 md:text-xl">Starlight</span>
             </a>
-            <nav
-                class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center invisible sm:visible">
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center invisible sm:visible">
                 <a class="mr-5 text-xs text-black">Explore Starlight</a>
                 <a class="mr-5 text-xs text-black">Cryptoloria</a>
                 <a class="mr-5 text-xs text-black">SLX Token</a>
             </nav>
-            <div class="buttons flex mt-4">
-                <button
-                    class="inline-flex items-center text-sm border border-purple-500 md:px-4 md:mr-3 rounded-full text-base invisible sm:visible md:mt-4 md:mt-0 md:mr-20">
+            <div class="buttons flex mt-4 space-x-4"> <!-- space-x-4 ekledim -->
+                <button class="inline-flex items-center text-sm border border-purple-500 md:px-4 md:mr-3 rounded-full text-base invisible sm:visible md:mt-4 md:mt-0 md:mr-20">
                     Sign in
                 </button>
-                <button
-                    class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base md:mt-4 md:mt-0 mr-2 -ml-14">
-                    <img src="img/night.svg">
-                </button>
-                <button
-                    class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base visible md:invisible md:mt-4 md:mt-0 mr-2">
-                    <img src="img/shape.svg">
-                </button>
-                <button
-                    class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base visible md:invisible md:mt-4 md:mt-0 mr-2">
-                    <img src="img/user.svg">
-                </button>
+                <div class="flex"> <!-- Bu div'i ekledim -->
+                    <button class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base md:mt-4 md:mt-0 mr-2">
+                        <img src="img/night.svg">
+                    </button>
+                    <button class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base md:mt-4 md:mt-0 mr-2">
+                        <img src="img/shape.svg">
+                    </button>
+                    <button class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base md:mt-4 md:mt-0 mr-2">
+                        <img src="img/user.svg">
+                    </button>
+                </div>
             </div>
         </div>
     </header>
-
+    
 
 
     <!-- MAIN -->
     <main>
-        <img class="md:absolute sm:relative md:mt-52 w-full invisible sm:visible" src="img/main.png">
+        <img class="absolute w-full invisible md:visible" src="img/main.png" alt="Main Image">
         <div class="mx-auto flex flex-col px-5 md:py-20 md:mb-60 md:pb-60 justify-center items-center"
             style="background-image: url('img/main-gradient.png');">
             <div class="w-full md:w-2/3 flex flex-col items-center text-center">
-                <img class="relative -top-60 md:-top-2" src="img/cryptoria.png">
-                <img src="img/main-x.png">
+                <img class="relative -top-60 md:-top-2" src="img/cryptoria.png" alt="Cryptoria Logo">
+                <img src="img/main-x.png" alt="Main X">
                 <div class="logo flex mt-3 mb-5">
-                    <img src="img/x.svg">
+                    <img src="img/x.svg" alt="X Logo">
                     <span class="ml-3 text-xl">Starlight</span>
                 </div>
                 <p class="mb-8 md:w-2/4 w-2/4 text-xs leading-relaxed">
-                    The enchanted universe of Cryptoloria in partnership with Starlight.
-                    Exclusive NFT collection drops.
+                    The enchanted universe of Cryptoloria in partnership with Starlight. Exclusive NFT collection drops.
                 </p>
                 <div class="flex w-full justify-center items-end">
                     <div class="relative mr-4 mb-5 lg:w-full xl:w-1/2 w-2/4 md:w-full text-center text-xs font-bold">
                         <p>Next drop in:</p>
                     </div>
                 </div>
-                <div class="flex sm:w-1/2">
+                <div class="flex sm:w-1/2 ml-44">
                     <div class="parag">
                         <b>4</b>
                         <p class="pl-4 text-sm">Days</p>
                     </div>
-                    <img class="mx-5" src="img/stick.svg">
+                    <img class="mx-3" src="img/stick.svg" alt="Stick">
                     <div class="parag">
                         <b>5</b>
                         <p class="pl-7 text-sm">Hours</p>
                     </div>
-                    <img class="mx-6 mr-2" src="img/stick.svg">
+                    <img class="mx-3" src="img/stick.svg" alt="Stick">
                     <div class="parag">
                         <b>43</b>
                         <p class="pl-8 text-sm">Minutes</p>
                     </div>
-                    <img class="mx-6 mr-2" src="img/stick.svg">
+                    <img class="mx-3" src="img/stick.svg" alt="Stick">
                     <div class="parag">
                         <b>25</b>
                         <p class="pl-8 text-sm">Seconds</p>
@@ -93,96 +89,64 @@
 
 
     <!-- SECTION 1 -->
-    <section class="body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto mt-24">
-            <div class="text flex justify-between mb-4">
-                <p class="ml-28 text-3xl font-semibold tracking-wider">Featured Collection Name
-                </p>
-                <button
-                    class="inline-flex text-sm border border-purple-500 md:px-5 md:py-3 md:mr-3 rounded-full text-base invisible sm:visible md:mt-4 md:mt-0 md:mr-20">
-                    View all
-                </button>
+    <section class="bg-gray-100 relative">
+        <div class="container mx-auto md:py-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-semibold tracking-wider">Featured Collection Name</h2>
             </div>
-            <div class="cards flex mx-auto md:w-4/5">
-                <div class="mx-auto flex flex-wrap font-mono">
-                    <div class="card">
-                        <img class="lg:h-80 object-cover object-center rounded absolute" src="img/moon.png">
-                        <div class="box mx-5 p-2 mt-60 rounded bg-gray-300 relative w-full mr-32">
-                            <p class="title text-lg text-black font-semibold">
-                                Moon Landing
-                            </p>
-                            <p class="body text-gray-400 text-xs">
-                                Original Series
-                            </p>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Moon Landing Card -->
+                <div class="relative rounded-2xl overflow-hidden">
+                    <img src="img/moon.png" alt="Moon Landing" class="object-cover w-full h-full">
                 </div>
-                <div class="sm-cards flex flex-wrap flex-1">
-                    <div class="card-1 mx-auto flex flex-wrap font-mono ml-24">
-                        <div class="box rounded">
-                            <img class="rounded absolute" src="img/butterfly-1.png">
-                            <div class="box mx-3 py-1 px-2 mt-36 rounded-full bg-gray-300 relative w-full mr-16">
-                                <p class="title text-sm text-black font-semibold">
-                                    Butterfly
-                                </p>
-                            </div>
+                <!-- Butterfly Cards -->
+                <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="relative rounded overflow-hidden">
+                        <img src="img/butterfly-1.png" alt="Butterfly 1" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gray-300 opacity-50 flex items-center justify-center">
+                            <p class="text-sm font-semibold text-black">Butterfly</p>
                         </div>
                     </div>
-                    <div class="card-2 mx-auto flex flex-wrap font-mono">
-                        <div class="box rounded">
-                            <img class="rounded absolute" src="img/butterfly-2.png">
-                            <div class="box mx-3 py-1 px-2 mt-36 rounded-full bg-gray-300 relative w-full mr-16">
-                                <p class="title text-sm text-black font-semibold">
-                                    Butterfly
-                                </p>
-                            </div>
+    
+                    <div class="relative rounded overflow-hidden">
+                        <img src="img/butterfly-2.png" alt="Butterfly 2" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gray-300 opacity-50 flex items-center justify-center">
+                            <p class="text-sm font-semibold text-black">Butterfly</p>
                         </div>
                     </div>
-                    <div class="card-3 mx-auto flex flex-wrap font-mono">
-                        <div class="box rounded">
-                            <img class="rounded absolute" src="img/butterfly-3.png">
-                            <div class="box mx-3 py-1 px-2 mt-36 rounded-full bg-gray-300 relative w-full mr-16">
-                                <p class="title text-sm text-black font-semibold">
-                                    Butterfly
-                                </p>
-                            </div>
+    
+                    <div class="relative rounded overflow-hidden">
+                        <img src="img/butterfly-3.png" alt="Butterfly 3" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gray-300 opacity-50 flex items-center justify-center">
+                            <p class="text-sm font-semibold text-black">Butterfly</p>
                         </div>
                     </div>
-                    <div class="card-4 mx-auto flex flex-wrap font-mono ml-24 mt-8">
-                        <div class="box rounded">
-                            <img class="rounded absolute" src="img/butterfly-4.png">
-                            <div class="box mx-3 py-1 px-2 mt-36 rounded-full bg-gray-300 relative w-full mr-16">
-                                <p class="title text-sm text-black font-semibold">
-                                    Butterfly
-                                </p>
-                            </div>
+    
+                    <div class="relative rounded overflow-hidden">
+                        <img src="img/butterfly-4.png" alt="Butterfly 4" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gray-300 opacity-50 flex items-center justify-center">
+                            <p class="text-sm font-semibold text-black">Butterfly</p>
                         </div>
                     </div>
-                    <div class="card-5 mx-auto flex flex-wrap font-mono mt-8">
-                        <div class="box rounded">
-                            <img class="rounded absolute" src="img/butterfly-5.png">
-                            <div class="box mx-3 py-1 px-2 mt-36 rounded-full bg-gray-300 relative w-full mr-16">
-                                <p class="title text-sm text-black font-semibold">
-                                    Butterfly
-                                </p>
-                            </div>
+    
+                    <div class="relative rounded overflow-hidden">
+                        <img src="img/butterfly-5.png" alt="Butterfly 5" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gray-300 opacity-50 flex items-center justify-center">
+                            <p class="text-sm font-semibold text-black">Butterfly</p>
                         </div>
                     </div>
-                    <div class="card-6 mx-auto flex flex-wrap font-mono mt-8">
-                        <div class="box rounded">
-                            <img class="rounded absolute" src="img/butterfly-6.png">
-                            <div class="box mx-3 py-1 px-2 mt-36 rounded-full bg-gray-300 relative w-full mr-16">
-                                <p class="title text-sm text-black font-semibold">
-                                    Butterfly
-                                </p>
-                            </div>
+    
+                    <div class="relative rounded overflow-hidden">
+                        <img src="img/butterfly-6.png" alt="Butterfly 6" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 bg-gray-300 opacity-50 flex items-center justify-center">
+                            <p class="text-sm font-semibold text-black">Butterfly</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
 
 
     <!-- SECTION 2 -->
