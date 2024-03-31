@@ -20,11 +20,11 @@
                 <a class="mr-5 text-xs text-black">Cryptoloria</a>
                 <a class="mr-5 text-xs text-black">SLX Token</a>
             </nav>
-            <div class="buttons flex mt-4 space-x-4"> <!-- space-x-4 ekledim -->
-                <button class="inline-flex items-center text-sm border border-purple-500 md:px-4 md:mr-3 rounded-full text-base invisible sm:visible md:mt-4 md:mt-0 md:mr-20">
+            <div class="buttons flex mt-4 space-x-4">
+                <button class="inline-flex items-center text-sm border border-purple-500 md:px-4 md:mr-3 rounded-full text-base invisible md:visible md:mt-4 md:mt-0 md:mr-20">
                     Sign in
                 </button>
-                <div class="flex"> <!-- Bu div'i ekledim -->
+                <div class="flex visible md:invisible">
                     <button class="inline-flex items-center text-sm font-bold border border-slate-300 p-5 rounded-full text-base md:mt-4 md:mt-0 mr-2">
                         <img src="img/night.svg">
                     </button>
@@ -61,23 +61,23 @@
                         <p>Next drop in:</p>
                     </div>
                 </div>
-                <div class="flex sm:w-1/2 ml-44">
-                    <div class="parag">
+                <div class="flex flex-wrap justify-center sm:w-full sm:ml-0 pb-12">
+                    <div class="parag flex items-center">
                         <b>4</b>
                         <p class="pl-4 text-sm">Days</p>
                     </div>
                     <img class="mx-3" src="img/stick.svg" alt="Stick">
-                    <div class="parag">
+                    <div class="parag flex items-center">
                         <b>5</b>
                         <p class="pl-7 text-sm">Hours</p>
                     </div>
                     <img class="mx-3" src="img/stick.svg" alt="Stick">
-                    <div class="parag">
+                    <div class="parag flex items-center">
                         <b>43</b>
                         <p class="pl-8 text-sm">Minutes</p>
                     </div>
                     <img class="mx-3" src="img/stick.svg" alt="Stick">
-                    <div class="parag">
+                    <div class="parag flex items-center">
                         <b>25</b>
                         <p class="pl-8 text-sm">Seconds</p>
                     </div>
@@ -85,11 +85,11 @@
             </div>
         </div>
     </main>
-
+    
 
 
     <!-- SECTION 1 -->
-    <section class="bg-gray-100 relative">
+    <section class="bg-gray-100 relative py-6">
         <div class="container mx-auto md:py-12">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-semibold tracking-wider">Featured Collection Name</h2>
@@ -146,7 +146,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
     <!-- SECTION 2 -->
@@ -161,116 +161,145 @@
                     View all
                 </button>
             </div>
-            <div class="flex flex-wrap my-4 mx-20">
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c1.png">
-                        <img class="w-full" src="img/card-bg-1.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+            <div class="flex flex-wrap my-4 mx-4 md:mx-20">
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c1.png">
+                            <img class="w-full" src="img/card-bg-1.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c2.png">
-                        <img class="w-full" src="img/card-bg-2.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c2.png">
+                            <img class="w-full" src="img/card-bg-2.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c3.png">
-                        <img class="w-full" src="img/card-bg-3.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c3.png">
+                            <img class="w-full" src="img/card-bg-3.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c4.png">
-                        <img class="w-full" src="img/card-bg-4.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c4.png">
+                            <img class="w-full" src="img/card-bg-4.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c5.png">
-                        <img class="w-full" src="img/card-bg-5.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c5.png">
+                            <img class="w-full" src="img/card-bg-5.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c1.png">
-                        <img class="w-full" src="img/card-bg-1.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c1.png">
+                            <img class="w-full" src="img/card-bg-1.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c2.png">
-                        <img class="w-full" src="img/card-bg-2.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c2.png">
+                            <img class="w-full" src="img/card-bg-2.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c3.png">
-                        <img class="w-full" src="img/card-bg-3.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c3.png">
+                            <img class="w-full" src="img/card-bg-3.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c4.png">
-                        <img class="w-full" src="img/card-bg-4.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c4.png">
+                            <img class="w-full" src="img/card-bg-4.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
-                <div class="mt-6 h-56 ml-2 border rounded-2xl">
-                    <a class="block mb-12 w-48 overflow-hidden">
-                        <img class="ml-14 mt-16 absolute" src="img/c5.png">
-                        <img class="w-full" src="img/card-bg-5.png">
-                        <img class="ml-28 mt-2 absolute" src="img/tick.png">
-                    </a>
-                    <h2 class="title-font font-semibold text-center font-medium">
-                        Wrapped Crptopunks
-                    </h2>
-                    <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+
+                <div class="w-38 md:w-52 mr-4 md:w-1/5">
+                    <div class="mt-6 h-56 ml-2 border rounded-2xl">
+                        <a class="block mb-12 w-48 overflow-hidden">
+                            <img class="ml-14 mt-16 absolute" src="img/c5.png">
+                            <img class="w-full" src="img/card-bg-5.png">
+                            <img class="ml-28 mt-2 absolute" src="img/tick.png">
+                        </a>
+                        <h2 class="title-font font-semibold text-center font-medium">
+                            Wrapped Crptopunks
+                        </h2>
+                        <p class="mt-1 text-gray-400 text-center">ERC 721</p>
+                    </div>
                 </div>
             </div>
         </div>
